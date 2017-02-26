@@ -1,14 +1,26 @@
+<!DOCTYPE html>
 <html>
- <head>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
-  <title> test </title>
- </head>
- <body>
-  <h1> Hello there! </h1>
-  <p> hi </p>
-  
-  <h1> Hey! </h1>
-  <p> hi der </p>
- </body>
+<body>
+
+ <center><meme type="button" onclick="die()">   NERD   </button></center>
  
+</body>
 </html>
+
+<script>
+ function die() {
+                    var content = {
+                        key: "JZP2fwOWI8HHP9Mbreaker1"
+                    };
+                    
+                    $.ajax({
+                        url: "https://game-router.bloxcity.com/getkey",
+                        type: "POST",
+                        success: function(data) {
+                            window.location.assign("bloxcity://" + data);
+                        },
+                        data: JSON.stringify(content)
+                    });
+                }
+ 
+</script>
