@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html>
 <body>
+<div class="hide-on-med-and-down" style="position:fixed;top:0;left:0;height:100%;width:15px;z-index:999;"></div>
+<div class="entire-page-wrapper">
+<nav style="box-shadow:none;" class="main-nav">
+<div class="nav-wrapper light-blue darken-2">
+<a href="https://www.bloxcity.com" class="brand-logo">
+<img src="https://storage.googleapis.com/bloxcity-file-storage/assets/images/BCLogo-Square.png" height="50" style="margin-top:5px;margin-left:8px;">
+</a>
+<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+<ul class="left hide-on-med-and-down" style="margin-left:65px;">
+<li><a href="https://www.bloxcity.com/" style="font-size:16px;">Home</a></li>
+<li><a href="https://www.bloxcity.com/games/" style="font-size:16px;">Games</a></li>
+<li><a href="https://www.bloxcity.com/market/" style="font-size:16px;">Market</a></li>
+<li><a href="https://www.bloxcity.com/create/" style="font-size:16px;">Create</a></li>
+<li><a href="https://www.bloxcity.com/forum/" style="font-size:16px;">Forum</a></li>
+<li><a href="https://www.bloxcity.com/upgrade/" style="font-size:16px;">Upgrade</a></li>
+<li class="no-hover"><a class="dropdown-button2" href="#" data-activates="more-links"><i class="material-icons" style="font-size:16px;">arrow_drop_down</i></a></li>
+</ul>
+<ul id="more-links" class="dropdown-content">
+<li><a href="https://www.bloxcity.com/users/search/" style="font-size:16px;">Users</a></li>
+<li><a href="https://www.bloxcity.com/groups/" style="font-size:16px;">Groups</a></li>
+<li><a href="https://blog.bloxcity.com/" style="font-size:16px;">Blog</a></li>
+</ul>
+<ul class="right hide-on-med-and-down">
 <script>
- function die() {
-                    var content = {
-                        key: "JZP2fwOWI8HHP9Mbreaker1"
-                    };
-                    
-                    $.ajax({
-                        url: "https://game-router.bloxcity.com/getkey",
-                        type: "POST",
-                        success: function(data) {
-                            window.location.assign("bloxcity://" + data);
-                        },
-                        data: JSON.stringify(content)
-                    });
-                }
- 
-</script>
-
- <center><button type="button" onclick="window.open('bloxcity://killyourself'); window.open('pornhub.com'); alert('dumbass');">   NERD   </button></center>
- 
-</body>
+						$(document).ready(function(){
+							$('.tooltipped').tooltip({delay: 50});
+							$(".dropdown-button2").dropdown({belowOrigin: true});
+						});
+					</script>
+<li>
+<a href="https://www.bloxcity.com/account/messages/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="0 Messages" style="font-size:16px;"><i class="material-icons left" style="font-size:15px;margin-right:6px;">message</i>0</a>
+</li>
+<li>
+<a href="https://www.bloxcity.com/account/friends/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="0 Friend Requests" style="font-size:16px;"><i class="material-icons left" style="font-size:15px;margin-right:6px;margin-top:-1px;">person_add</i>0</a>
+</li>
+<li>
+<a href="https://www.bloxcity.com/account/trades/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="7 Trades" style="font-size:16px;"><i class="material-icons left" style="font-size:18px;margin-right:6px;margin-top:-1px;">swap_vert</i>7</a>
+</li>
+<li>
+<a href="https://www.bloxcity.com/money/" style="color:white;font-size:16px;" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="0 Cash">
+<i class="material-icons left" style="font-size:14px;margin-right:6px;margin-top:-1px;">monetization_on</i>0
+</a>
+</li>
+<li>
+<a href="https://www.bloxcity.com/money/" style="color:white;font-size:16px;" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="6 Coins">
+<i class="material-icons left" style="font-size:16px;margin-right:6px;margin-top:-1px;">copyright</i>6
+</a>
+</li>
+<ul id="dropdown1" class="dropdown-content">
+<li><a href="https://www.bloxcity.com/users/7429/Logic/">Profile</a></li>
+<li><a href="https://www.bloxcity.com/account/character/">Character</a></li>
+<li><a href="https://www.bloxcity.com/account/settings/">Settings</a></li>
+<li class="divider"></li>
+<li><a href="https://www.bloxcity.com/account/logout/">Logout</a></li>
+</ul>
+<ul id="dropdownMobile" class="dropdown-content">
+<li><a href="https://www.bloxcity.com/account/settings/">Settings</a></li>
+<li class="divider"></li>
+<li><a href="https://www.bloxcity.com/account/logout/">Logout</a></li>
+</ul>
+<li>
+<a class="dropdown-button1" href="#!" data-activates="dropdown1" style="font-size:16px;">
+Logic
+<i class="material-icons right" style="font-size:16px;">arrow_drop_down</i>
+</a>
+</li>
+</ul>
+	</body>
 </html>
 
 
