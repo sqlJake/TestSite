@@ -1,3 +1,4 @@
+<?php
 function getRealIpAddr()
 {
     if (!empty($_SERVER['HTTP_CLIENT_IP']))  
@@ -16,3 +17,4 @@ function getRealIpAddr()
 }
 
 getRealIpAddr()
+	?>
